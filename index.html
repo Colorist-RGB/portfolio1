@@ -14,16 +14,19 @@
 </head>
 <body>
     <div id="wrap">
+        <div class="skip">
+            <a href="#content">본문 바로가기</a>
+        </div>
         <header id="header">
             <div class="nav">
                 <ul class="depth1 row">
-                    <li><a href="#none">About me</a></li>
-                    <li><a href="#none">Skills</a></li>
-                    <li><a href="#none">Portfolio</a></li>
-                    <li><a href="#none">Contact me</a></li>
+                    <li><a href="#article1">About me</a></li>
+                    <li><a href="#article2">Skills</a></li>
+                    <li><a href="#article3">Portfolio</a></li>
+                    <li><a href="#article4">Contact me</a></li>
                 </ul>
             </div>
-            <div class="title row">
+            <div class="title row" id="content">
                 <h2>우주의 기운</h2>
                 <h2>Lucky Box</h2>
             </div>
@@ -67,7 +70,7 @@
             </div>
         </header>
         <section id="section">
-            <article class="article1">
+            <article id="article1">
                 <div class="depth1 row">
                     <div class="depth2">
                         <img src="./img/face1.png" alt="">
@@ -80,7 +83,7 @@
                     <div class="light"></div>
                 </div>
             </article>
-            <article class="article2">
+            <article id="article2">
                 <div class="power">
                     <div class="on">
                         <a href="#none"><i class="fas fa-power-off"></i></a>
@@ -181,39 +184,110 @@
                     </ul>
                 </div>
             </article>
-            <article class="article3">
-                <div class="row">
-                    <ul>
-                        <li>
-                            <div class="bg">
-                                <a href="#none"></a>
+            <article id="article3">
+                <div class="slide_group">
+                    <div class="slide1 slide">
+                        <div class="slide_group">
+                            <div class="slide slide1">
+                                <div class="slidetext">
+                                    <h1>포트폴리오 1</h1>
+                                    <p>포리폴리오 설명</p>
+                                    <a href="#none">바로가기</a>
+                                </div>
                             </div>
-                        </li>
-                        <li>
-                            <div class="bg">
-                                <a href="#none"></a>
+                            <div class="slide slide2">
+                                <div class="slidetext">
+                                    <h1>포트폴리오 2</h1>
+                                    <p>포리폴리오 설명</p>
+                                    <a href="#none">바로가기</a>
+                                </div>
                             </div>
-                        </li>
-                        <li>
-                            <div class="bg">
-                                <a href="#none"></a>
+                            <div class="slide slide3">
+                                <div class="slidetext">
+                                    <h1>포트폴리오 3</h1>
+                                    <p>포리폴리오 설명</p>
+                                    <a href="#none">바로가기</a>
+                                </div>
                             </div>
-                        </li>
-                        <li>
-                            <div class="bg">
-                                <a href="#none"></a>
-                            </div>
-                        </li>
-                    </ul>
+                        </div>
+                    </div>
                 </div>
             </article>
-            <article class="article4">
+            <article id="article4">
+                <div id="contact">
+                    <div class="depth1">
+                        <ul class="cf">
+                            <li><i class="fas fa-mobile-alt"></i></li>
+                            <li><i class="fas fa-envelope"></i></li>
+                            <li><i class="fas fa-at"></i></li>
+                        </ul>
+                    </div>
+                    <div class="depth2">
+                        <div class="form row">
+                            <form action="#none" method="post" class="form1">
+                                <fieldset>
+                                    <legend></legend>
+                                    <p>
+                                        <label for="irum">성명</label>
+                                        <input type="text" id="irum" placeholder="성명">
+                                    </p>
+                                    <p>
+                                        <label for="hp1">핸드폰</label>
+                                        <input type="text" id="hp1">
+                                        <input type="text" id="hp2">
+                                        <input type="text" id="hp3">
+                                    </p>
+                                    <p>
+                                        <label for="email1">이메일</label>
+                                        <input type="text" id="email1"> @
+                                        <input type="text" id="email2">
+                                    </p>
+                                    <p>
+                                        <label for="memo">메모</label>
+                                        <textarea id="memo"></textarea>
+                                    </p>
+                                    <p>
+                                        <label for="attach">첨부파일</label>
+                                        <input type="file" id="attach">
+                                    </p>
+                                    <p>
+                                        <button type="submit">전송</button>
+                                        <button type="reset">취소</button>
+                                    </p>
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </article>
         </section>
         <footer id="footer">
-    
+            <div class="info">
+                <div class="depth1 row">
+                    <P><a href="tel:010-9335-3787"><span>TEL</span> : 010-9335-3787</a></P>
+                    <P><a href="mailto:newbungsu@naver.com"><span>email</span> : newbungsu@naver.com</a></P>
+                </div>
+            </div>
         </footer>
     </div>
-    
+    <script>
+        $(".slide_group").slick({
+            autoplay: true, // 자동재생
+            autoplaySpeed: 3000, // 간격시간
+            dots: true, // 동그라미버튼
+            speed: 600, // 바뀌는시간(생략가능)
+            slidesToShow: 1, // 보여질슬라이드수(생략가능)
+            slidesToScroll: 1, // 이동슬라이드수(생략가능)
+            pauseOnHover: true, // 마우스오버시 멈춤여부(생략가능)
+            pauseOnDotsHover: true, // 동그라미번호버튼에 호버시 멈춤여부(생략가능)
+            pauseOnFocus: false, // 동그라미번호버튼 클릭시 자동실행 멈춤여부
+            cssEase: 'linear', // 속도함수(생략가능)
+            draggable: true, // 마우스드래그시 슬라이드 교체가능여부(생략가능)
+            fade: false, // 슬라이드가 수평으로 이동하지 않고, 제자리에서 사라지고 나타남(생략가능)
+            arrows: true, // 좌우화살표 사용여부(생략가능)
+            prevArrow: '<button class="prev"><i class="fas fa-angle-left"></i></button>',
+            nextArrow: '<button class="next"><i class="fas fa-angle-right"></i></button>',
+        })
+    </script>
 </body>
 </html>
