@@ -42,7 +42,7 @@ body {
 /* 네비게이션 */
 }
 .nav {
-    background: rgba(255,255,255,0.1);
+    background: #1C2A33;
     border-bottom: 1px solid rgba(255,255,255,0.3);
     box-shadow: 0px 7px 9px #003468;
     position: fixed;
@@ -124,7 +124,7 @@ body {
     background:rgba(255,255,255,0.3);
     width: 200px;
     height: 200px;
-    color: #ffd400;
+    color: orange;
     border-radius: 25%;
     border: 5px solid #fff;
     transition: all 0.2;
@@ -255,7 +255,7 @@ body {
 
 /* 섹션 아티클2 스킬 */
 .article2{
-    height: 800px;
+    padding-bottom: 70px;
 }
 .article2 .power {
     position: relative;
@@ -298,8 +298,8 @@ body {
 }
 /* 질문 : 화면크기에 따라서 정확하지 않게 구현됌 */
 @keyframes move1 {
-    from { left: 460px; transform: scale(1); opacity: 100%; }
-    to { left: 560px; transform: scale(1.2); opacity: 0; }
+    from { left: 1010px; transform: scale(1); opacity: 100%; }
+    to { left: 1110px; transform: scale(1.2); opacity: 0; }
 }
 .article2 .arrowright > i:nth-child(1) {
     position: absolute;
@@ -320,11 +320,404 @@ body {
     animation: move2 2s both infinite 2s;
 }
 @keyframes move2 {
-    from { right: 460px; transform: scale(1); opacity: 30%; }
-    to { right: 560px; transform: scale(1.2); opacity: 0; }
+    from { right: 1010px; transform: scale(1); opacity: 30%; }
+    to { right: 1110px; transform: scale(1.2); opacity: 0; }
 }
-.article2 .ai {
+.article2 .skills {
+    font-family: 'Jua', sans-serif;
+    text-align: center;
+    font-weight: 300;
+    margin-top: 70px;
+}
+.article2 .skills li {
+    position: relative;
+    width: 200px;
+    height: 280px;
+}
+
+/* 스킬 개별 영역 시작 */
+.article2 .skills p:nth-child(2) {
+    opacity: 0;
+}
+.article2 .skills .HTML .depth3 > p:nth-child(1) {
+    color: orange;
+    font-size:40px;
+}
+.article2 .skills .HTML .depth3 > p:nth-child(2) {
+    color: orange;
+    animation: animate__bounceIn 1s both 0s;
+    animation: HTML2 2s both 0s;
+}
+@keyframes HTML2 {
+    to { opacity: 100%; }
+}
+.article2 .skills .HTML > .depth1 {
+    background-color: orange;
+    width: 200px;
+    height: 0px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    animation: HTML 2s both 0s;
+}
+@keyframes HTML {
+    to { height: 30% }
+}
+.article2 .skills .HTML > .depth2 {
+    background-color: orange;
+    width: 200px;
+    height: 280px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.2;
+}
+.article2 .skills .CSS .depth3 > p:nth-child(1) {
+    color: blue;
+    font-size:40px;
+}
+.article2 .skills .CSS .depth3 > p:nth-child(2) {
+    color: blue;
+    animation: animate__bounceIn 1s both 0s;
+    animation: CSS2 2s both 0.5s;
+}
+@keyframes CSS2 {
+    to { opacity: 100%; }
+}
+.article2 .skills .CSS > .depth1 {
+    background-color: blue;
+    width: 200px;
+    height: 0px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    animation: CSS 2s both 0.5s;
+}
+@keyframes CSS {
+    to { height: 30% }
+}
+.article2 .skills .CSS > .depth2 {
+    background-color: blue;
+    width: 200px;
+    height: 280px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.2;
+}
+.article2 .skills .Java .depth3 > p:nth-child(1) {
+    color: magenta;
+    font-size:40px;
+}
+.article2 .skills .Java .depth3 > p:nth-child(2) {
+    color: magenta;
+    animation: animate__bounceIn 1s both 0s;
+    animation: Java2 2s both 1s;
+}
+@keyframes Java2 {
+    to { opacity: 100%; }
+}
+.article2 .skills .Java > .depth1 {
+    background-color: magenta;
+    width: 200px;
+    height: 0px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    animation: Java 2s both 1s;
+}
+@keyframes Java {
+    to { height: 30% }
+}
+.article2 .skills .Java > .depth2 {
+    background-color: magenta;
+    width: 200px;
+    height: 280px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.2;
+}
+.article2 .skills .Jquery .depth3 > p:nth-child(1) {
+    color: purple;
+    font-size:40px;
+}
+.article2 .skills .Jquery .depth3 > p:nth-child(2) {
+    color: purple;
+    animation: animate__bounceIn 1s both 0s;
+    animation: Jquery2 2s both 1.5s;
+}
+@keyframes Jquery2 {
+    to { opacity: 100%; }
+}
+.article2 .skills .Jquery > .depth1 {
+    background-color: purple;
+    width: 200px;
+    height: 0px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    animation: Jquery 2s both 1.5s;
+}
+@keyframes Jquery {
+    to { height: 30% }
+}
+.article2 .skills .Jquery > .depth2 {
+    background-color: purple;
+    width: 200px;
+    height: 280px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.2;
+}
+.article2 .skills .React .depth3 > p:nth-child(1) {
+    color: violet;
+    font-size:40px;
+}
+.article2 .skills .React .depth3 > p:nth-child(2) {
+    color: violet;
+    animation: animate__bounceIn 1s both 0s;
+    animation: React2 2s both 2s;
+}
+@keyframes React2 {
+    to { opacity: 100%; }
+}
+.article2 .skills .React > .depth1 {
+    background-color: violet;
+    width: 200px;
+    height: 0px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    animation: React 2s both 2s;
+}
+@keyframes React {
+    to { height: 30% }
+}
+.article2 .skills .React > .depth2 {
+    background-color: violet;
+    width: 200px;
+    height: 280px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.2;
+}
+.article2 .skills .ai .depth3 > p:nth-child(1) {
+    color: #ef7726;
+    font-size:40px;
+}
+.article2 .skills .ai .depth3 > p:nth-child(2) {
+    color: #ef7726;
+    animation: animate__bounceIn 1s both 0s;
+    animation: ai2 2s both 2.5s;
+}
+@keyframes ai2 {
+    to { opacity: 100%; }
+}
+.article2 .skills .ai > .depth1 {
     background-color: #ef7726;
     width: 200px;
-    height: 300px;
+    height: 0px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    animation: ai 2s both 2.5s;
 }
+@keyframes ai {
+    to { height: 80% }
+}
+.article2 .skills .ai > .depth2 {
+    background-color: #ef7726;
+    width: 200px;
+    height: 280px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.2;
+}
+.article2 .skills .ps .depth3 > p:nth-child(1) {
+    color: #3dbfee;
+    font-size:40px;
+}
+.article2 .skills .ps .depth3 > p:nth-child(2) {
+    color: #3dbfee;
+    animation: animate__bounceIn 1s both 0s;
+    animation: ps2 2s both 3s;
+}
+@keyframes ps2 {
+    to { opacity: 100%; }
+}
+.article2 .skills .ps > .depth1 {
+    background-color: #3dbfee;
+    width: 200px;
+    height: 0px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    animation: ps 2s both 3s;
+}
+@keyframes ps {
+    to { height: 90% }
+}
+.article2 .skills .ps > .depth2 {
+    background-color: #3dbfee;
+    width: 200px;
+    height: 280px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.2;
+}
+.article2 .skills .in .depth3 > p:nth-child(1) {
+    color: #e9458e;
+    font-size:40px;
+}
+.article2 .skills .in .depth3 > p:nth-child(2) {
+    color: #e9458e;
+    animation: animate__bounceIn 1s both 0s;
+    animation: in2 2s both 3.5s;
+}
+@keyframes in2 {
+    to { opacity: 100%; }
+}
+.article2 .skills .in > .depth1 {
+    background-color: #e9458e;
+    width: 200px;
+    height: 0px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    animation: in 2s both 3.5s;
+}
+@keyframes in {
+    to { height: 70% }
+}
+.article2 .skills .in > .depth2 {
+    background-color: #e9458e;
+    width: 200px;
+    height: 280px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.2;
+}
+.article2 .skills .pr .depth3 > p:nth-child(1) {
+    color: #b478b2;
+    font-size:40px;
+}
+.article2 .skills .pr .depth3 > p:nth-child(2) {
+    color: #b478b2;
+    animation: animate__bounceIn 1s both 0s;
+    animation: pr2 2s both 4s;
+}
+@keyframes pr2 {
+    to { opacity: 100%; }
+}
+.article2 .skills .pr > .depth1 {
+    background-color: #b478b2;
+    width: 200px;
+    height: 0px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    animation: pr 2s both 4s;
+}
+@keyframes pr {
+    to { height: 50% }
+}
+.article2 .skills .pr > .depth2 {
+    background-color: #b478b2;
+    width: 200px;
+    height: 280px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.2;
+}
+
+.article2 .skills .ae .depth3 > p:nth-child(1) {
+    color: #ad8dc1;
+    font-size:40px;
+}
+.article2 .skills .ae .depth3 > p:nth-child(2) {
+    color: #ad8dc1;
+    animation: animate__bounceIn 1s both 0s;
+    animation: ae2 2s both 4.5s;
+}
+@keyframes ae2 {
+    to { opacity: 100%; }
+}
+.article2 .skills .ae > .depth1 {
+    background-color: #ad8dc1;
+    width: 200px;
+    height: 0px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    animation: ae 2s both 4.5s;
+}
+@keyframes ae {
+    to { height: 50% }
+}
+.article2 .skills .ae > .depth2 {
+    background-color: #ad8dc1;
+    width: 200px;
+    height: 280px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.2;
+}
+/* 스킬 개별 영역 끝*/
+.article2 .skills .depth2 {
+    box-shadow: 0px 0px 20px #fff, 0px 0px 10px #fff;
+}
+.article2 .skills .depth3 {
+    background-color: #fff;
+    width: 160px;
+    height: 240px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.article2 .skills .depth3 > p:nth-child(1) {
+    padding-top: 65px;
+}
+.article2 .skills .depth3 > p:nth-child(2) {
+    color: #000;
+    font-size:50px;
+    font-weight: bold;
+}
+.article2 .skills ul li {
+    float: left;
+    width: 20%;
+    margin-bottom: 40px;
+}
+
+/* 파워버튼 작동 */
+.on > a:hover .depth1 {  }
+
+/* 섹션 아티클3 포트폴리오 */
