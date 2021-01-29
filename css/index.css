@@ -257,10 +257,12 @@ body {
 
 /* 섹션 아티클2 스킬 */
 #article2{
-    padding-bottom: 70px;
+    margin: 70px 0;
 }
 #article2 .power {
     position: relative;
+    margin: 0 auto;
+    width: 390px;
 }
 #article2 .on {
     text-align: center;
@@ -273,57 +275,49 @@ body {
 }
 #article2 i {
     color: #fff200;
-    margin-top: 70px;
-    font-size: 80px;
+    font-size: 80px;    
 }
-#article2 .arrowleft,
-#article2 .arrowright {
-    width: 520px;
+#article2 .arrowleft i {
+    position: absolute;
+    top: 18%;
+    left: 0;
+}
+#article2 .arrowright i {
+    position: absolute;
+    top: 18%;
+    right: 0;
 }
 #article2 .arrowleft > i:nth-child(1) {
-    position: absolute;
-    top: 15px;
     font-size: 50px;
     animation: move1 2s both infinite 0s;
 }
 #article2 .arrowleft > i:nth-child(2) {
-    position: absolute;
-    top: 15px;
     font-size: 50px;
     animation: move1 2s both infinite 0.7s;
 }
 #article2 .arrowleft > i:nth-child(3) {
-    position: absolute;
-    top: 15px;
     font-size: 50px;
     animation: move1 2s both infinite 1.4s;
 }
-/* 질문 : 화면크기에 따라서 이동방향이 다르게 보임 */
 @keyframes move1 {
-    from { left: 1010px; transform: scale(1); opacity: 100%; }
-    to { left: 1110px; transform: scale(1.2); opacity: 0; }
+    from { transform: translate(0) scale(1); opacity: 30%; }
+    to { transform: translate(220%) scale(1.2); opacity: 0; }
 }
 #article2 .arrowright > i:nth-child(1) {
-    position: absolute;
-    top: 15px;
     font-size: 50px;
     animation: move2 2s both infinite 0s;
 }
 #article2 .arrowright > i:nth-child(2) {
-    position: absolute;
-    top: 15px;
     font-size: 50px;
     animation: move2 2s both infinite 0.7s;
 }
 #article2 .arrowright > i:nth-child(3) {
-    position: absolute;
-    top: 15px;
     font-size: 50px;
     animation: move2 2s both infinite 1.4s;
 }
 @keyframes move2 {
-    from { right: 1010px; transform: scale(1); opacity: 30%; }
-    to { right: 1110px; transform: scale(1.2); opacity: 0; }
+    from { transform: translate(0) scale(1); opacity: 30%; }
+    to { transform: translate(-220%) scale(1.2); opacity: 0; }
 }
 #article2 .skills {
     font-family: 'Jua', sans-serif;
