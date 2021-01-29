@@ -82,7 +82,6 @@ body {
     height: 20px;
     background: #fff;
 }
-/* 질문 : 선을 양쪽에 다 만드려면 */
 .nav > .depth1 > li:nth-child(4)::before { 
     display: none;
 }
@@ -129,7 +128,7 @@ body {
     color: orange;
     border-radius: 25%;
     border: 5px solid #fff;
-    transition: all 0.2;
+    transition: all 0.3s;
     box-shadow: 0px 0px 7px #fff;
 }
 #header .luckybox li:hover a {
@@ -291,15 +290,15 @@ body {
     position: absolute;
     top: 15px;
     font-size: 50px;
-    animation: move1 2s both infinite 1s;
+    animation: move1 2s both infinite 0.7s;
 }
 #article2 .arrowleft > i:nth-child(3) {
     position: absolute;
     top: 15px;
     font-size: 50px;
-    animation: move1 2s both infinite 2s;
+    animation: move1 2s both infinite 1.4s;
 }
-/* 질문 : 화면크기에 따라서 정확하지 않게 구현됌 */
+/* 질문 : 화면크기에 따라서 이동방향이 다르게 보임 */
 @keyframes move1 {
     from { left: 1010px; transform: scale(1); opacity: 100%; }
     to { left: 1110px; transform: scale(1.2); opacity: 0; }
@@ -314,13 +313,13 @@ body {
     position: absolute;
     top: 15px;
     font-size: 50px;
-    animation: move2 2s both infinite 1s;
+    animation: move2 2s both infinite 0.7s;
 }
 #article2 .arrowright > i:nth-child(3) {
     position: absolute;
     top: 15px;
     font-size: 50px;
-    animation: move2 2s both infinite 2s;
+    animation: move2 2s both infinite 1.4s;
 }
 @keyframes move2 {
     from { right: 1010px; transform: scale(1); opacity: 30%; }
@@ -720,8 +719,8 @@ body {
     margin-bottom: 40px;
 }
 
-/* 파워버튼 작동 */
-.on > a:hover .depth1 {  }
+/* 파워버튼 작동
+.on > a:hover .depth1 {  } */
 
 /* 섹션 아티클3 포트폴리오 - 슬라이드 슬릭 설정 */
 button { border: none; outline: none; }
@@ -940,7 +939,7 @@ button { border: none; outline: none; }
     color: #999;
 }
 
-/* 푸터 */
+/* 푸터 인포 */
 #footer .info {
     background: #1C2A33;
     border-top: 1px solid rgba(255,255,255,0.3);
@@ -984,4 +983,29 @@ button { border: none; outline: none; }
 }
 #footer .info > .depth1 > p:nth-child(2)::before { 
     display: none;
+}
+
+/* 푸터 탑버튼 */
+#footer .topbutton .depth1 {
+    background: rgba(255,255,255,0.5);
+    width: 45px;
+    height: 45px;
+    position: fixed;
+    bottom: 9%;
+    right: 2%;
+    border-radius: 50%;
+    border: 3px solid yellow;
+    overflow: hidden;
+}
+#footer .topbutton .depth2 > a {
+    display: block;
+    color: #fff;
+    font-size: 25px;
+    text-align: center;
+    line-height: 39px;
+    transition: all 0.5s;
+}
+#footer .topbutton .depth2 > a:hover {
+    background: #000;
+    color: #fff;
 }
