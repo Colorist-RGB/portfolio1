@@ -85,7 +85,8 @@ body {
 .nav > .depth1 > li:nth-child(4)::before { 
     display: none;
 }
-.nav > .depth1 > li:hover a {
+.nav > .depth1 > li.on a {
+    color: #ffd400;
     transform: scale(1.1);
     text-shadow: 0px 0px 10px #000;
 }
