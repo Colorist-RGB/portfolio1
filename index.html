@@ -9,9 +9,11 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
     <link rel="stylesheet" href="./css/slick.css">
     <link rel="stylesheet" href="./css/animate.css">
+    <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/index.css">
     <script src="./js/jquery-3.5.1.min.js"></script>
     <script src="./js/slick.min.js"></script>
+    <script src="./js/jquery.mousewheel.min.js"></script>
 </head>
 
 <body>
@@ -22,57 +24,60 @@
         <header id="header">
             <div class="nav">
                 <ul class="depth1 row">
-                    <li class='on'><a href="#article1">About me</a></li>
-                    <li><a href="#article2">Skills</a></li>
-                    <li><a href="#article3">Portfolio</a></li>
-                    <li><a href="#article4">Contact me</a></li>
+                    <li class='on'><a href="#none">About me</a></li>
+                    <li><a href="#none">Skills</a></li>
+                    <li><a href="#none">Portfolio</a></li>
+                    <li><a href="#none">Contact me</a></li>
                 </ul>
-            </div>
-            <div class="title row" id="content">
-                <h2>우주의 기운</h2>
-                <h2>Lucky Box</h2>
-            </div>
-            <div class="luckybox row">
-                <ul class="cf">
-                    <li><a href="#modal1"><i class="fas fa-gift"></i></a></li>
-                    <li><a href="#modal2"><i class="fas fa-gift"></i></a></li>
-                    <li><a href="#modal3"><i class="fas fa-gift"></i></a></li>
-                    <li><a href="#modal4"><i class="fas fa-gift"></i></a></li>
-                </ul>
-            </div>
-            <div id="modal">
-                <div id="modal1">
-                    <div class="depth1">
-                        <i class="fas fa-drumstick-bite"></i>
-                        <p>오늘은<br>치킨을 얻어먹을 운수입니다.<br>지인과 함께 치맥하세요!</p>
-                        <a href="#none"><i class="fas fa-times"></i></a>
-                    </div>
-                </div>
-                <div id="modal2">
-                    <div class="depth1">
-                        <i class="fas fa-won-sign"></i>
-                        <p>이번주 토요일에<br>로또에 당첨될 운수입니다.<br>천원어치도 당첨됩니다!</p>
-                        <a href="#none"><i class="fas fa-times"></i></a>
-                    </div>
-                </div>
-                <div id="modal3">
-                    <div class="depth1">
-                        <i class="far fa-question-circle"></i>
-                        <p>내일 누군가에게<br>깜짝 선물을 받게될 운수입니다.<br>오늘 밤 소원을 빌어보세요!</p>
-                        <a href="#none"><i class="fas fa-times"></i></a>
-                    </div>
-                </div>
-                <div id="modal4">
-                    <div class="depth1">
-                        <i class="far fa-kiss-wink-heart"></i>
-                        <p>새로운 인연이!<br>애인이 생길 운수입니다.<br>이미 있다면 꽝!</p>
-                        <a href="#none"><i class="fas fa-times"></i></a>
-                    </div>
-                </div>
             </div>
         </header>
         <section id="section">
+            <article id="articleLucky">
+                <div class="title row" id="content">
+                    <h2>우주의 기운</h2>
+                    <h2>Lucky Box</h2>
+                </div>
+                <div class="luckybox row">
+                    <ul class="cf">
+                        <li><a href="#modal1"><i class="fas fa-gift"></i></a></li>
+                        <li><a href="#modal2"><i class="fas fa-gift"></i></a></li>
+                        <li><a href="#modal3"><i class="fas fa-gift"></i></a></li>
+                        <li><a href="#modal4"><i class="fas fa-gift"></i></a></li>
+                    </ul>
+                </div>
+                <div id="modal">
+                    <div id="modal1">
+                        <div class="depth1">
+                            <i class="fas fa-drumstick-bite"></i>
+                            <p>오늘은<br>치킨을 얻어먹을 운수입니다.<br>지인과 함께 치맥하세요!</p>
+                            <a href="#none"><i class="fas fa-times"></i></a>
+                        </div>
+                    </div>
+                    <div id="modal2">
+                        <div class="depth1">
+                            <i class="fas fa-won-sign"></i>
+                            <p>이번주 토요일에<br>로또에 당첨될 운수입니다.<br>천원어치도 당첨됩니다!</p>
+                            <a href="#none"><i class="fas fa-times"></i></a>
+                        </div>
+                    </div>
+                    <div id="modal3">
+                        <div class="depth1">
+                            <i class="far fa-question-circle"></i>
+                            <p>내일 누군가에게<br>깜짝 선물을 받게될 운수입니다.<br>오늘 밤 소원을 빌어보세요!</p>
+                            <a href="#none"><i class="fas fa-times"></i></a>
+                        </div>
+                    </div>
+                    <div id="modal4">
+                        <div class="depth1">
+                            <i class="far fa-kiss-wink-heart"></i>
+                            <p>새로운 인연이!<br>애인이 생길 운수입니다.<br>이미 있다면 꽝!</p>
+                            <a href="#none"><i class="fas fa-times"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </article>
             <article id="article1">
+                <div class="bg"></div>
                 <div class="depth1 row">
                     <div class="depth2">
                         <img src="./img/face1.png" alt="">
@@ -83,6 +88,83 @@
                         <h2>저는 <span>강병수</span>입니다</h2>
                     </div>
                     <div class="light"></div>
+                </div>
+            </article>
+            <article id="articleAdd" class="row cf">
+                <div class="depth1">
+                    <h2>상세정보</h2>
+                    <div class="textBox">
+                        <div class="left">
+                            <p>이<span class="space"></span>름<span class="colon">:</span></p>
+                            <p>생<span class="space"></span>일<span class="colon">:</span></p>
+                            <p>핸드폰<span class="colon">:</span></p>
+                            <p>이메일<span class="colon">:</span></p>
+                            <p>주<span class="space"></span>소<span class="colon">:</span></p>
+                        </div>
+                        <div class="right">
+                            <p>강병수</p>
+                            <p>1994-03-08</p>
+                            <p>010-9335-3787</p>
+                            <p>newbungsu@naver.com</p>
+                            <p>서울특별시 강동구 천중로53길 6<br>현대웰하임1단지 12층 1201호</p>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="depth2">
+                    <h2>자격정보</h2>
+                    <div class="textBox">
+                        <div class="left">
+                            <p>2017.11.24<span class="colon">:</span></p>
+                            <p>2014.12.09<span class="colon">:</span></p>
+                            <p>2014.08.14<span class="colon">:</span></p>
+                            <p>2006.03.09<span class="colon">:</span></p>
+                            <p>2006.02.27<span class="colon">:</span></p>
+                        </div>
+                        <div class="right">
+                            <p>컬러리스트 산업기사</p>
+                            <p>운전면허증 1종 보통</p>
+                            <p>GTQ 1급</p>
+                            <p>ITQ 아래한글 A급</p>
+                            <p>워드프로세서 2급</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="depth3">
+                    <h2>학력&amp;병역사항</h2>
+                    <div class="textBox">
+                        <div class="left">
+                            <p>2015 - 2016<span class="colon">:</span></p>
+                            <p>2013 - 2015<span class="colon">:</span></p>
+                            <p>2010 - 2013<span class="colon">:</span></p>
+                            <p>2007 - 2010<span class="colon">:</span></p>
+                        </div>
+                        <div class="right">
+                            <p>28사단 육군 수색대 만기전역</p>
+                            <p>오산대학교 시각디자인과 졸업</p>
+                            <p>평택고등학교 졸업</p>
+                            <p>평택중학교 졸업</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="depth4">
+                    <h2>경력사항</h2>
+                    <div class="textBox">
+                        <div class="left">
+                            <p>2019.12 - 2020.12<span class="colon">:</span></p>
+                            <p>2019.04 - 2019.10<span class="colon">:</span></p>
+                        </div>
+                        <div class="right">
+                            <p>창기획</p>
+                            <p>평택프리미엄 아울렛</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="lightBox">
+                    <div class="top"></div>
+                    <div class="left"></div>
+                    <div class="bottom"></div>
+                    <div class="right"></div>
                 </div>
             </article>
             <article id="article2">
@@ -187,26 +269,28 @@
                 </div>
             </article>
             <article id="article3">
-                <div class="slide_group">
-                    <div class="slide slide1">
-                        <div class="slidetext">
-                            <h1>포트폴리오 1</h1>
-                            <p>포리폴리오 설명</p>
-                            <a href="#none">바로가기</a>
+                <div class="sdSize row">
+                    <div class="slide_group">
+                        <div class="slide slide1">
+                            <div class="slidetext">
+                                <h1>Cafe24 카피캣</h1>
+                                <p>Cafe24에서 제작된 샘플을 카피 &amp; 일부리뉴얼한 포트폴리오입니다.</p>
+                                <a href="http://blepoly.cafe24.com/portfolio2/" target="_blank">바로가기</a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="slide slide2">
-                        <div class="slidetext">
-                            <h1>포트폴리오 2</h1>
-                            <p>포리폴리오 설명</p>
-                            <a href="#none">바로가기</a>
+                        <div class="slide slide2">
+                            <div class="slidetext">
+                                <h1>포트폴리오 2</h1>
+                                <p>포리폴리오 설명</p>
+                                <a href="#none">바로가기</a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="slide slide3">
-                        <div class="slidetext">
-                            <h1>포트폴리오 3</h1>
-                            <p>포리폴리오 설명</p>
-                            <a href="#none">바로가기</a>
+                        <div class="slide slide3">
+                            <div class="slidetext">
+                                <h1>포트폴리오 3</h1>
+                                <p>포리폴리오 설명</p>
+                                <a href="#none">바로가기</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -231,21 +315,33 @@
                                     </p>
                                     <p>
                                         <label for="hp1">핸드폰</label>
-                                        <input type="text" id="hp1" placeholder="010">
-                                        <input type="text" id="hp2">
-                                        <input type="text" id="hp3">
+                                        <select name="hp" id="hp">
+                                            <option value="010">010</option>
+                                            <option value="011">011</option>
+                                        </select>
+                                        -
+                                        <input type="text" id="hp1" name="hp1">
+                                        -
+                                        <input type="text" id="hp2" name="hp2">
                                     </p>
                                     <p>
-                                        <label for="email1">이메일</label>
-                                        <input type="text" id="email1" placeholder="portfolio"> @
-                                        <input type="text" id="email2">
+                                        <label for="emailid">이메일</label>
+                                        <input type="text" id="emailid" name="emailid">
+                                        @
+                                        <input type="text" id="emaildomain" name="emaildomain" disabled="true">
+                                        <select id="domainlist">
+                                            <option value="noselect">-이메일선택-</option>
+                                            <option value="naver.com">네이버</option>
+                                            <option value="daum.net">다음</option>
+                                            <option value="self">직접입력</option>
+                                        </select>
                                     </p>
                                     <p>
                                         <label for="memo">메모</label>
                                         <textarea id="memo"></textarea>
                                     </p>
                                     <p>
-                                        <label for="attach">첨부파일</label>
+                                        <label for="attach" class="attach">첨부파일</label>
                                         <input type="file" id="attach">
                                     </p>
                                     <p>
@@ -253,6 +349,12 @@
                                         <button type="reset">취소</button>
                                     </p>
                                 </fieldset>
+                                <div class="lightBox">
+                                    <div class="top"></div>
+                                    <div class="left"></div>
+                                    <div class="bottom"></div>
+                                    <div class="right"></div>
+                                </div>
                             </form>
                         </div>
                     </div>
@@ -274,6 +376,15 @@
                 </div>
             </div>
         </footer>
+        <div class="introAni">
+            <div class="load1"></div>
+            <div class="load2"></div>
+            <div class="load3"></div>
+            <div class="load4"></div>
+            <div class="numBox">
+                <P>0%</P>
+            </div>
+        </div>
     </div>
     <script src="./js/index.js"></script>
 </body>
