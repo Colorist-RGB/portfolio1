@@ -264,6 +264,8 @@ $('#domainlist').on('change', function () {
     } else {
         $('#emaildomain').attr({
             disabled: false
-        }).val('')
+        }).val('').css({
+            background: '#fff'
+        })
     }
 })
