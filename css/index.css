@@ -1258,6 +1258,10 @@ button {
     border-radius: 5px;
     transition: all 0.4s;
 }
+.slide .slidetext .textColor {
+    border: 1px solid #999;
+    color: #999;
+}
 
 .slide .slidetext a:hover {
     background: #fff;
