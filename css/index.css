@@ -132,6 +132,17 @@
     display: none;
 }
 
+#article1 .depth1 .depth2 {
+    width: 350px;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+#article1 .depth1 .depth2 img {
+    margin-top: -12px;
+}
+
 #article1.on2 {
     display: block;
     animation: down 1s both;
