@@ -960,17 +960,17 @@
     opacity: 0.2;
 }
 
-#article2 .skills .pr .depth3>p:nth-child(1) {
+#article2 .skills .php .depth3>p:nth-child(1) {
     color: #b478b2;
     font-size: 40px;
 }
 
-#article2.on .skills .pr .depth3>p:nth-child(2) {
+#article2.on .skills .php .depth3>p:nth-child(2) {
     color: #b478b2;
     animation: bounceIn 1s both 2.4s;
 }
 
-#article2 .skills .pr>.depth1 {
+#article2 .skills .php>.depth1 {
     background-color: #b478b2;
     width: 200px;
     height: 0px;
@@ -980,17 +980,17 @@
     transform: translate(-50%);
 }
 
-#article2.on .skills .pr>.depth1 {
-    animation: pr 1s both 2.4s;
+#article2.on .skills .php>.depth1 {
+    animation: php 1s both 2.4s;
 }
 
-@keyframes pr {
+@keyframes php {
     to {
-        height: 50%
+        height: 70%
     }
 }
 
-#article2 .skills .pr>.depth2 {
+#article2 .skills .php>.depth2 {
     background-color: #b478b2;
     width: 200px;
     height: 280px;
@@ -1001,17 +1001,17 @@
     opacity: 0.2;
 }
 
-#article2 .skills .ae .depth3>p:nth-child(1) {
+#article2 .skills .sql .depth3>p:nth-child(1) {
     color: #ad8dc1;
     font-size: 40px;
 }
 
-#article2.on .skills .ae .depth3>p:nth-child(2) {
+#article2.on .skills .sql .depth3>p:nth-child(2) {
     color: #ad8dc1;
     animation: bounceIn 1s both 2.7s;
 }
 
-#article2 .skills .ae>.depth1 {
+#article2 .skills .sql>.depth1 {
     background-color: #ad8dc1;
     width: 200px;
     height: 0px;
@@ -1021,17 +1021,17 @@
     transform: translate(-50%);
 }
 
-#article2.on .skills .ae>.depth1 {
-    animation: ae 1s both 2.7s;
+#article2.on .skills .sql>.depth1 {
+    animation: sql 1s both 2.7s;
 }
 
-@keyframes ae {
+@keyframes sql {
     to {
-        height: 50%
+        height: 70%
     }
 }
 
-#article2 .skills .ae>.depth2 {
+#article2 .skills .sql>.depth2 {
     background-color: #ad8dc1;
     width: 200px;
     height: 280px;
